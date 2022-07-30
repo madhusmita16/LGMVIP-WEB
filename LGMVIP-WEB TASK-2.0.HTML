@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.right {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+table,th{
+  border: 1px solid black;
+  background-color: lightblue;
+  border-collapse: collapse;
+}
+  th, td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+  background-color: #cccccc;
+
+  min-height: 200px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 80v0%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+      <tr>
+        <td colspan="3"><h1 style="color:black;text-align:center;">STUDENT ENROLLMENT FORM</h1></td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><label for="name">Name:</label></td>
+        <td  style="text-align:center"><input type="text" name="name" id="name" placeholder="your name"></td>
+      </tr>
+      <tr>
+        <td  style="text-align:center"><label for="email">Email:</label></td>
+        <td  style="text-align:center"><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+        <td  style="text-align:center"><label for="Website">Website:</label></td>
+        <td  style="text-align:center"><input type="text" name="Website" id="Website" placeholder="Enter Website"></td>
+      </tr>
+      <tr>
+        <td  style="text-align:center"><label for="Image">Image:</label></td>
+        <td  style="text-align:center"><input type="text" name="Image link" id="Image" placeholder="Image link"></td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><label for="gender">Gender:</label></td>
+        <td  style="text-align:center">Male: <input type="radio" name="gender" value="MALE">
+          Female: <input type="radio" name="gender" value="FEMALE">
+          Other: <input type="radio" name="gender" value="OTHER"></td>
+      </tr>
+      <tr>
+        <td  style="text-align:center"><label for="Skill">Skill:</label></td>
+        <td  style="text-align:center"> JAVASCRIPT <input type="radio" name="gender" value="JAVASCRIPT">
+          CSS<input type="radio" name="gender" value="HTML">
+          HTML <input type="radio" name="gender" value="CSS"></td>
+      </tr>
+    
+      <tr style="height:100px">
+        <td colspan="2"text-align: left;><input type="submit"class="submit"value="ENROLL STUDENT"/></td>
+
+        <td text-align: right;><input type="submit" class="submit" value="Clear" /></td>
+      </tr>
+    </table>
+
+  </form>
+</div>
